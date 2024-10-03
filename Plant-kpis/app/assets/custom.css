@@ -1,0 +1,12 @@
+/* custom.css */
+.table-responsive {
+    overflow-y: auto;
+    max-height: 300px; /* Set the desired max height */
+}
+
+.table-responsive thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white; /* Ensure the header background color */
+}

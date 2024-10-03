@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.my-navbar .col, .form-control, .img {
+    padding-left: 0;
+    padding-right: 0;
+}
+body{
+    background-color: #F1F5F9;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    background-color: #FFFFFF; /* White background */
+    border-radius: 50px; /* Rounded edges */
+    padding: 8px 20px; /* Padding for shaping */
+}
+
+.nav-link {
+    color: black; /* Text color for links */
+    margin-right: 20px; /* Space between links */
+    background-color:#F1F5F9;
+    border-radius: 20px;
+}
+
+.nav-link.active {
+    background-color: #FB8500; /* Orange background for active link */
+    color: white !important;
+    border-radius: 20px;
+}
+
+.nav-item img {
+    margin-left: 5px; /* Space between text and icon in link */
+}
+
+/* Style adjustments for the search bar and icons */
+.input {
+    border-radius: 20px;
+    background-color:#F1F5F9;
+}
+
+
+.input-group .btn {
+    background: #F1F5F9;
+    border: 1px solid #CCCCCC;
+    border-left: 1;
+    border-radius: 0 30px 30px 0;
+}
+
+/* Color of the switch when ON */
+.form-check-input:checked {
+    background-color: #FB8500 !important; /* Blue color */
+    border-color: #FB8500 !important;
+}
+
+/* Background of the switch track when ON */
+.form-check-input:checked + .form-check-label::before {
+    background-color: #FB8500 !important;
+    opacity: 0.5; /* Optional: adjust opacity to lower to see the effect */
+}
+
+/* Color of the switch when OFF */
+.form-check-input:not(:checked) + .form-check-label::before {
+    background-color: #CCCCCC !important; /* Gray color */
+    opacity: 0.5; /* Optional: adjust opacity to lower to see the effect */
+}
+
+/* Handle color */
+.form-check-input:checked + .form-check-label::after {
+    background-color: #fff !important; /* White handle */
+}
+
+
+
+/* Optional: Customize the dropdown toggle button if needed */
+.dropdown-toggle {
+    background-color: #FFFFFF !important; /* White background for the toggle */
+    color: #333333 !important; /* Color for the toggle text */
+    border-radius:10px
+}
+.Select-menu-outer {
+    display: block !important;
+  }
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #ffffff; /* White background */
+    width: 210px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1050;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sidebar img {
+    width: 100%;
+    max-width: 150px; /* Adjust this value as needed */
+    padding: 10px;
+    margin: 0 auto; /* Center the image */
+}
+
+.sidebar .display-6 {
+    color: #F18226;
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar .nav-link {
+    color: black !important; /* Ensure inactive link text color is black */
+    background-color: white !important; /* Ensure inactive link background color is white */
+    margin: 15px 15px; /* Add margin to create space between items */
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #FFF2CB !important; /* Light yellow background for active link */
+    color: #F18226 !important;
+    padding: 5px 15px; /* Orange text for active link */
+}
+
+.sidebar .dropdown-menu {
+    background-color: #ffffff; /* Light yellow background for dropdown */
+    border: none; /* Remove border for dropdown menu */
+    position: static; /* Ensure proper positioning */
+    width: 50%; /* Ensure it takes full width */
+}
+
+.sidebar .dropdown-item {
+    color: black !important; /* Ensure inactive item text color is black */
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 5px 0; /* Add margin to create space between items */
+    background-color: white !important; /* Ensure inactive item background color is white */
+}
+
+.sidebar .dropdown-item.active {
+    background-color: #FFF2CB !important; /* Light yellow background for active item */
+    color: #F18226 !important; /* Orange text for active item */
+}
+
+.sidebar-handle {
+    position: fixed; /* Change from absolute to fixed to position it outside the sidebar */
+    padding: 5px 10px; /* Reduce padding to make the handle smaller */
+    right: -55px; /* Align it to the right edge */
+    top: 50%;
+    transform: translateY(-50%) rotate(270deg); /* Rotate the text vertically */
+    background-color: #F18226;
+    color: white; /* Text color */
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1100; /* Ensure it is above all other elements */
+    border-radius: 0 0 10px 10px; /* Round the edges */
+    white-space: nowrap; /* Prevent text wrapping */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add slight shadow for better visibility */
+}
+.sub-overallcard {
+ 
+    position: relative; /* Establishes a relative positioning context */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    height: 100px;  /* Or set to dynamic height as needed */
+    overflow: hidden;  /* Ensures content does not spill outside */
+}
+ 
+.sub-overallcard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 253, 253, 0.553); /* Semi-transparent white overlay */
+    pointer-events: none;  /* Allows interaction with underlying elements */
+    z-index: 1; /* Places the overlay below the content but above the background */
+}
+ 
+.sub-card-body {
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
+}
+.alert-text {
+    font-size: 0.6rem; /* Adjust the size as needed */
+    margin-bottom: 0;  /* Optional: Reduce the margin to fit content better */
+}
+
+[data-page='/Overall_dashboard'] .navbar {
+    display: none !important;
+}
+.hidden-navbar {
+    display: none;
+}
+/* assets/styles.css */
+.dash-table-container .row-headers .delete svg {
+    visibility: hidden;
+}
+
+.dash-table-container .row-headers .delete:before {
+    content: "\f1f8";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    color: #dc3545;
+    cursor: pointer;
+}
+
+.dash-table-container .row-headers .delete {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
