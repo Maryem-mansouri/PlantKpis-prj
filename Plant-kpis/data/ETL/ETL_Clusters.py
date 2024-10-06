@@ -272,7 +272,7 @@ for week in unique_weeks:
         ">6 months",
         "Obsolete"
     ]
-    filtered_week_df['Clusters'] = np.select(conditions, cluster_labels)
+    filtered_week_df['Clusters'] = np.select(conditions, cluster_labels,default='Unknown')
 
     # Print columns of final_df before the calculation
     print("Columns in final_df before the consumption calculation:", final_df.columns)
