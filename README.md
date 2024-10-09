@@ -1,3 +1,8 @@
+## Requirements
+
+To run this project, you need to install the following Python packages. You can install them using pip:
+
+```bash
 pip install dash
 pip install dash_bootstrap_components
 pip install dash_html_components
