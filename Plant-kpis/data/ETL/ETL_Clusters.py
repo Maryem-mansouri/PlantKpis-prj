@@ -3,7 +3,7 @@ import numpy as np
 from sqlalchemy import create_engine,text
 
 # Step 1: Load the PU data from the Excel file
-file_path = r'C:\Users\TE582412\Desktop\PU.xlsx'
+file_path = r'.\datafiles\PU.xlsx'
 pu_df = pd.read_excel(file_path)
 
 # Step 2: Connect to the SQL Server and fetch the necessary tables
