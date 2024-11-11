@@ -42,4 +42,9 @@ This application uses the following tables in SQL Server:
 - **dbo.Segments_Table**: Stores segment-related data.
 - **dbo.Teams_Table**: Stores information about teams.
 
+To run this application, follow these steps:
+
+Navigate to the Project Directory:
+cd Plant_KPIs
+python run.py
 
